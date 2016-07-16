@@ -4,13 +4,13 @@ Go binary that watches a folder for images and generates thumbnails of them.
 
 ### Install
 
-    go get github.com/fogleman/thumbs
+    $ go get github.com/fogleman/thumbs
 
 ### Run
 
 The app will run forever, watching the `src` folder for images.
 
-    thumbs
+    $ thumbs
 
 You should probably use something like [supervisor](http://supervisord.org/) to
 launch and monitor the `thumbs` process.
@@ -18,11 +18,11 @@ launch and monitor the `thumbs` process.
 Want to generate thumbnails for images that already exist? Just do this while
 `thumbs` is running:
 
-    touch *.jpg *.png
+    $ touch *.jpg *.png
 
 ### Arguments
 
-    thumbs -src IMAGE_FOLDER -dst THUMB_FOLDER -w MAX_WIDTH -h MAX_HEIGHT -q JPG_QUALITY
+    $ thumbs -src IMAGE_FOLDER -dst THUMB_FOLDER -w MAX_WIDTH -h MAX_HEIGHT -q JPG_QUALITY
 
 All arguments are optional. See the defaults below.
 
