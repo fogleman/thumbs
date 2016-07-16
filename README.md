@@ -12,8 +12,13 @@ The app will run forever, watching the `src` folder for images.
 
     thumbs
 
-Probably, you would use something like [supervisor](http://supervisord.org/) to
+You should probably use something like [supervisor](http://supervisord.org/) to
 launch and monitor the `thumbs` process.
+
+Want to generate thumbnails for images that already exist? Just do this while
+`thumbs` is running:
+
+    touch *.jpg *.png
 
 ### Arguments
 
